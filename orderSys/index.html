@@ -7,7 +7,7 @@
   <title>第一章实例 在线订单系统</title>
 </head>
 <body>
-  <form action="main.php" method="POST">
+  <form action="processorder.php" method="POST">
     <table border="0">
       <caption>Order Form</caption>
       <tr bgcolor="#ccc">
@@ -16,19 +16,19 @@
       </tr>
       <tr>
         <td>Tires</td>
-        <td align="center"><input type="text" name="tireqty" size="3" maxlength="3"></td>
+        <td><input type="text" name="tireqty" size="3" maxlength="3"></td>
       </tr>
       <tr>
         <td>Oil</td>
-        <td align="center"><input type="text" name="oilqty" size="3" maxlength="3"></td>
+        <td><input type="text" name="oilqty" size="3" maxlength="3"></td>
       </tr>
       <tr>
         <td>Spark Plugs</td>
-        <td align="center"><input type="text" name="sparkqty" size="3" maxlength="3"></td>
+        <td><input type="text" name="sparkqty" size="3" maxlength="3"></td>
       </tr>
       <tr>
-        <td>Shopping Address</td>
-        <td align="center"><input type="text" name="address" size="3" maxlength="12"></td>
+        <td>Ship Address</td>
+        <td><input type="text" name="address" size="24" maxlength="60"></td>
       </tr>
       <tr>
         <td colspan="2" align="center"><input type="submit" value="提交订单"></td>

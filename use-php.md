@@ -76,6 +76,28 @@ PHP控制结构之`declare`结构
 写文件`fwrite()`，`fputs()`是它的别名
 `fwrite()`的替换函数`file_put_contents()`，与之匹配的`file_get_contents()`
 
+```
+fwrite($fp,$outputstring,strlen($outputstring));
+```
 
+`fclose($fp);`关闭文件
+
+`while(!feof($fp))`当`$fp`指向文件末尾时，`feof`返回true
+
+每次读取一行数据：`fgets()`、`fgetss()`和`fgetcsv()`
+`fgets()`以 换行符 或者 文件结束符 为结束
+`fgetss()` 是前一个的变体，可以过滤字符串中包含的PHP和HTML标记
+`fgetcsv()`是 fgets 的另一种变体，当在文件中使用了定界符时，如制表符，可以使用该行数将文件分成多行。
+
+
+读取整个文件：readfile()、fpassthru()、file()
+读取一个字符：fgetc()
+读取任意长度：fread()
+
+其他文件函数
+- file_exists()
+- filesize()
+- unlink() 删除文件
+- 文件中定位：rewind()、fseek()、ftell()
 
 
